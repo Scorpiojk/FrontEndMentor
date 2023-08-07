@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("./images/bg-mobile.png");
+    background-color: hsl(229, 57%, 11%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === GLOBAL___CLASSES === */
+
+.border_5 {
+    border-radius: 5px;
+}
+
+.border--top_right {
+    border-radius: 5px 40px 5px 5px;
+}
+
+.white {
+    background-color: hsl(0, 10%, 88%);
+}
+
+.pale--blue {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.grayish--blue {
+    background-color: hsl(229, 7%, 55%);
+}
+
+.dark--blue {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.very--dark--blue {
+    background-color: hsl(229, 57%, 11%);
+}
+
+.gradient--bar {
+    background: linear-gradient(180deg, hsl(229, 57%, 11%), hsl(335, 100%, 65%));
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bold--big {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+
+
+/* === CLASSES STYILING === */
+
+
+
+
+/* === BOX ONE CONTAINER === */
+
+.box-one {
+    margin: 8% 5%;
+    padding: 10px;
+    font-size: 0.5em;
+}
+
+.brand {
+    height: 40px;
+}
+
+.brand-logo {
+    display: block;
+    width: 100%;
+    margin: auto;
+    transform: scale(0.6) translate(-30%,-10%);
+}
+
+
+/* SVG_path -> positioning and styling */
+
+.actions {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.actions svg {
+    margin-right: 3%;
+}
+
+.action-icon {
+    transform: scale(0.6) translate(40%, 35%);  
+}
+
+
+/* ============================ */
+
+
