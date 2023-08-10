@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #e6eff6;
+    font-size: 16px;
+}
+
+
+
+
+
+.container-grid {
+    height: max-content;
+    display: grid;
+    margin: 80px auto;
+    grid-template-rows: repeat(3, 350px);
+    width: 84%;
+    box-shadow: 0 0 5px 2px #d8e3ed;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px 15px 30px 15px;
+}
+
+.grid * {
+    margin: .2em 0;
+}
+/* ======================== */
+/* First */
+/* ======================== */
+.first {
+    background-color: #ffffff;
+}
+
+.first h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.green {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.cyan {
+    font-size: 1em;
+    line-height: 1.8em;
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+}
+
+/* ======================== */
+/* Secon */
+/* ======================== */
+
+.second {
+    background-color: #2bb3b1;
+}
+
+.second h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+}
+
+.money {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.4em;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+}
+
+.gray {
+    font-size: 0.5em;
+    color: #7ce3e8;
+}
+
+/* ======================== */
+/* Third */
+/* ======================== */
+
+.third {
+    background-color: #4abebd;
+}
