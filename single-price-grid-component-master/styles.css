@@ -21,9 +21,9 @@ body {
     height: max-content;
     display: grid;
     margin: 80px auto;
-    grid-template-rows: repeat(3, 350px);
+    grid-template-rows: 320px 250px 220px;
     width: 84%;
-    box-shadow: 0 0 5px 2px #d8e3ed;
+    box-shadow: 0 0 15px 2px #d8e3ed;
 }
 
 .grid {
@@ -62,7 +62,7 @@ body {
 }
 
 /* ======================== */
-/* Secon */
+/* Second */
 /* ======================== */
 
 .second {
@@ -80,7 +80,7 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 2.4em;
-    color: hsl(204, 43%, 93%);
+    color: hsl(204, 29%, 97%);
     font-weight: 700;
 }
 
@@ -89,10 +89,109 @@ body {
     color: #7ce3e8;
 }
 
+.text-gray {
+    color: #c4fbfb;
+    margin-bottom: 20px;
+}
+
+.submit {
+    width: 90%;
+    margin: 0 auto;
+    padding: 14px 0;
+    font-size: 1em;
+    background-color: #bfdf32;
+    border: transparent;
+    color: #e6eff6;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 1px #179694;
+    transition: all .5s;
+}
+
 /* ======================== */
 /* Third */
 /* ======================== */
 
 .third {
     background-color: #4abebd;
+}
+
+.third h2 {
+    color: #d8e3ed;
+}
+
+.third p {
+    color: #c4fbfb;
+    font-size: .8em;
+    line-height: 1.5em;
+    width: 70%;
+}
+
+/* ======================== */
+/* Media */
+/* ======================== */
+
+@media screen and (min-width: 375px) {
+    
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .container-grid {
+        height: max-content;
+        display: grid;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-rows: 2fr 2.2fr;
+        grid-template-columns: 400px 400px;
+        width: fit-content;
+        box-shadow: 0 0 25px 20px #d8e3ed;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .first {
+        grid-row: 1 / 1;
+        grid-column: span 2;
+        padding: 30px;
+    }
+    .green {
+        margin-bottom: -15px;
+        font-size: 1.2em;
+    }
+
+    .second {
+        grid-row: 2 / 2;
+        grid-column: 2 / 1;
+        padding: 30px 40px;
+    }
+
+    .third {
+        grid-row: 2 / 2;
+        grid-column: 2 / 2;
+        padding: 30px;
+    }
+
+    .third h2 {
+        margin-bottom: 18px;
+    }
+
+    .third p {
+        font-size: 1em;
+        line-height: 1.5em;
+        width: 70%;
+    }
+
+    .submit:hover {
+        transform: scale(1.1);
+    }
+
 }
