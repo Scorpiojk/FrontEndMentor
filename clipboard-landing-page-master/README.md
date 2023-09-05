@@ -5,5 +5,5 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [https://github.com/Scorpiojk/FrontEndMentor/tree/main/clipboard-landing-page-master]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://scorpiojk.github.io/FrontEndMentor/clipboard-landing-page-master/index.html]
 
