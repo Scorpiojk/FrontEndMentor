@@ -1,0 +1,387 @@
+:root {
+
+    /* PRIMARY */
+    --Strong-cyan: hsl(171, 66%, 44%);
+    --Light-blue: hsl(233, 100%, 69%);
+
+    /* NEUTRAL */
+
+    --Dark-grayish-blue: hsl(210, 10%, 33%);
+    --Grayish-blue: hsl(201, 11%, 66%);
+}
+
+* , body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    background-color: #fefefefe;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ==================================== */
+/* Section positioning and sizeing */
+/* ==================================== */
+
+.logo {
+    height: 40vh;
+    background-image: url("/images/bg-header-mobile.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    height: 80vh;
+}
+
+.first {
+    margin-bottom: 10rem;
+}
+
+.second {
+    margin-bottom: 4rem;
+}
+
+.char {
+    padding-bottom: 2rem;
+}
+
+.icon {
+    padding-bottom:  1.5rem;
+}
+
+.sponsors {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0 9rem 0;
+}
+
+.download {
+    margin-bottom: 10rem;
+}
+
+
+/* ==== MEDIA QUERRIES ==== */
+
+@media screen and (min-width:375px) {
+    
+    .logo {
+        height: 44vh;
+        background-image: url("/images/bg-header-desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 6vh;
+    }
+
+    .introduction {
+        height: fit-content;
+        padding-bottom: 10%;
+    }
+
+    .first-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first {
+        margin-bottom: 2rem;
+    }
+
+    .three-char {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .char {
+        width: 33%;
+    }
+
+    .three-char .title-container {
+        width: 80%;
+    }
+
+    .sponsors {
+        flex-direction: row;
+        justify-content: space-between;
+        height: fit-content;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .brands {
+        padding: 20px;
+    }
+
+}
+
+/* ==================================== */
+/* FOOTER */
+/* ==================================== */
+
+footer, .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    height: 85vh;
+    padding: 5rem 0 2rem 0;
+    background-color: #e9e9e9e9;
+}
+
+.logo-footer {
+    width: 50%;
+    height: auto;
+}
+
+.links {
+    flex-grow: 2;
+    padding: 2rem 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+.links a:hover {
+    text-decoration: 2px solid underline;
+}
+
+.social-media {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.media-logo {
+    cursor: pointer;
+}
+
+
+/* ==== MEDIA QUERRIES ==== */
+
+@media screen and (min-width:375px) {
+ 
+    footer {
+        height: 90px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 0;
+    }
+
+    footer div {
+        align-items: center;
+    }
+    
+    footer .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: start;
+        font-size: 1em;
+        flex-grow: 0;
+        padding: 0;
+        gap: 20px;
+    }
+    .social-media {
+        width: 200px;
+    }
+
+}
+
+/* ==================================== */
+/* Buttons */
+/* ==================================== */
+
+.btn {
+    border-radius: 25px;
+    width: 84%;
+    padding: 12px 10px;
+    font-size: 1em;
+    margin: 20px 0 10px 0;
+    color: #fefefefe;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.green {
+    background-color: var(--Strong-cyan);
+    box-shadow: 0 2px 1px 2px hsl(171, 89%, 28%);
+}
+
+.green:hover {
+    border: 2px solid var(--Strong-cyan);
+    background-color: transparent;
+    color: var(--Strong-cyan);
+    font-weight: 700;
+    transition-duration: .2s;
+}
+
+.blue {
+    background-color: var(--Light-blue);
+    box-shadow: 0 2px 1px 2px hsl(233, 64%, 50%);
+}
+
+.blue:hover {
+    border: 2px solid var(--Light-blue);
+    background-color: transparent;
+    color: var(--Light-blue);
+    font-weight: 700;
+    transition-duration: .2s;
+}
+
+
+/* ==== MEDIA QUERRIES ==== */
+
+@media screen and (min-width:375px) {
+ 
+    .btn {
+        width: 240px;
+    }
+
+    .buttons-container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 2rem;
+    }
+}
+
+/* ==================================== */
+/* Text styling */
+/* ==================================== */
+
+.title-container {
+    margin: 0 auto;
+    width: 95%;
+    padding: 20px 0 40px 0;
+}
+
+.slogan {
+    font-size: 1.8em;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.4em;
+    color: var(--Dark-grayish-blue);
+    font-weight: 600;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+.title-description {
+    width: 94%;
+    margin: 0 auto;
+    color: var(--Grayish-blue);
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+/* Change width to characteristics section  */
+
+.three-char .title-container .title-description {
+    width: 98%;
+}
+
+
+/* ==== MEDIA QUERRIES ==== */
+
+@media screen and (min-width:375px) {
+   
+    .slogan {
+        width: 60%;
+        margin: 0 auto 1rem auto;
+        font-size: 3em;
+    }
+
+    .slogan br {
+        display: none;
+    }
+
+    .introduction .title-description br {
+        display: none;
+    }
+
+    .introduction .title-description {
+        width: 55%;
+        font-size: 1.3em;
+    }
+
+    .title-container {
+        width: 60%;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .first-desktop .title-container .title {
+        margin: 0 0 10px 0;
+    }
+
+    .first-desktop .title-container .title,
+    .first-desktop .title-container .title-description{
+        width: 100%;
+        text-align: left;
+    }
+
+}
+
+
+/* ==================================== */
+/* IMG SISEING */
+/* ==================================== */
+
+.computer {
+    width: 90%;
+    height: auto;
+    padding: 40px 0;
+}
+
+.devices {
+    width: 90%;
+    height: auto;
+    padding: 40px 0;
+}
+
+
+@media screen and (min-width:375px) {
+ 
+    .computer {
+        width: 60%;
+        margin-left: -28px;
+        margin-right: 28px;
+    }
+
+    .devices {
+        width: 65%;
+    }
+
+}    
+
