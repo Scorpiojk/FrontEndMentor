@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    background: var(--light-grayish-violet);
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+
+
+/* =============================== */
+
+.background-figure {
+    position: fixed;
+    left: -180px;
+    height: 650px;
+    width: 550px;
+    background: 
+    linear-gradient(
+        -145deg,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+    border-radius: 0 0 50% 50%;
+    z-index: 0;
+}
+
+.background-figure-right {
+    position: fixed;
+    bottom: 0;
+    right: -180px;
+    height: 600px;
+    width: 550px;
+    background: 
+    linear-gradient(
+        -145deg,
+        hsl(293, 100%, 63%, 0.1),
+        hsla(264, 100%, 61%, 0.1)
+    );
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
+}
+
+
+/* =============================== */
+
+.description {
+    width: 500px;
+    text-align: left;
+    padding: 20px;
+    z-index: 5;
+}
+
+
+/* Phone */
+
+.phone {
+    width: 300px;
+    min-width: 300px;
+    height: 580px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 9px solid var(--white);
+    background-color: var(--light-grayish-violet);
+    border-radius: 25px;
+    box-shadow: 0 0 30px 0px #9c9c9c;
+    z-index: 5;
+}
+
+
+/* top */
+
+.top {
+    background: linear-gradient(
+        -90deg,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+        );
+    color: var(--white);
+    font-size: .6em;
+    padding: 0 10px;
+    border-radius: 0 0 6px 6px;
+}
+
+.border-top {
+    width: 60%;
+    height: 18px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+}
+
+.profile img {
+    width: 30px;
+    height: auto;
+    margin: auto;
+    border: 1px solid var(--white);
+    border-radius: 2rem;
+}
+
+.profile-name {
+    flex-basis: 78%;
+    text-align: left;
+}
+
+.profile-name p {
+    font-weight: 400;
+    opacity: .5;
+}
+
+/* =============================== */
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    width: 60%;
+    margin: 10px 0 5px 10px;
+    padding: 8px;
+    font-size: .6em;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.left {
+    color: #9455c1;
+    background-color: #ede5f2;
+}
+
+.right {
+    align-self: flex-end;
+    color: #4f4f4f;
+    background-color: #ffffff;
+    margin: 8px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #c1c1c1;
+}
+
+.three-imgs {
+    align-self: flex-end;
+}
+
+.three-imgs img {
+    width: 50px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Offers */
+
+.offering {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    background: lin;
+    padding: 15px 10px;
+    margin: 10px;
+    width: 75%;
+    font-size: .7em;
+    color: var(--white);
+    background: linear-gradient(
+        90deg,
+        hsl(293, 100%, 63%),
+        hsl(264, 100%, 61%)
+    );
+    border-radius: 10px;
+}
+
+.offering p  {
+    color: hsla(0, 0%, 100%, 0.8);
+    flex-basis: 70%;
+}
+
+.offering i {
+    opacity: .7;
+}
+
+.price {
+    opacity: 1;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/* bottom */
+
+.bottom {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 25px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+}
+
+.bottom i {
+    font-size: 1.6em;
+    color: hsl(271, 36%, 24%);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 0;
+}
+
+.bottom p {
+    opacity: .4;
+    font-size: .6em;
+    margin-left: 10px;
+}
+
+/* =============================== */
+
+/* Description */
+
+.description h1 {
+    font-size: 2em;
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description p {
+    line-height: 1.5em;
+    color: hsl(271, 36%, 24%);
+    opacity: .5;
+}
+
+/* =============================== */
+/* Media Queries */
+
+@media only screen and (max-width: 375px) {
+
+    main {
+        height: 100%;
+        padding-top: 80px;
+    }
+
+    .description {
+        text-align: center;
+    }
+        
+    .background-figure {
+        position: absolute;
+        left: -350px;
+        height: 500px;
+        width: 480px;
+    }
+}
