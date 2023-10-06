@@ -4,11 +4,10 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com](https://github.com/Scorpiojk/FrontEndMentor/tree/main/ping-coming-soon-page-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://your-solution-url.com](https://github.com/Scorpiojk/FrontEndMentor/tree/main/ping-coming-soon-page-master
+- Live Site URL: https://scorpiojk.github.io/FrontEndMentor/ping-coming-soon-page-master/index.html
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@scorpiojk](https://www.frontendmentor.io/profile/scorpioJK)
+- Twitter - [@joseprogram](https://www.twitter.com/joseprogram)
