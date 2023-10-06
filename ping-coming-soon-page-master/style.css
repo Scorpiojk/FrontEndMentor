@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* =========================== */
+
+h1 {
+    font-weight: 300;
+    color: hsl(0, 0%, 62%);
+    margin-bottom: 14px;
+}
+
+h1 span {
+    font-weight: 700;
+    color: black;
+}
+
+.title p {
+    font-size: .8em;
+    font-weight: 300;
+}
+
+/* =========================== */
+
+.title {
+    padding-top: 25px;
+}
+
+.label {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.label input {
+    width: 70%;
+    border: 1px solid hsl(0, 0%, 82%);
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+}
+
+
+#error {
+    position: absolute;
+    color: red;
+    font-weight: 300;
+    font-size: .7em;
+    display: block;
+    margin: 0 auto;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.label button {
+    padding: 15px;
+    width: 20%;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    box-shadow: 0px 6px 4px 0px hsla(223, 87%, 63%, 0.262);
+    cursor: pointer;
+}
+
+.label button:hover {
+    background-color: white;
+    color: hsl(223, 87%, 63%);
+    border: 2px solid hsl(223, 87%, 63%);
+    transition: .3s;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+
+/* ============================= */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    color: hsl(0, 0%, 62%);
+    margin-top: 20px;
+}
+
+.logos-media i{
+    color: hsl(223, 87%, 63%);
+    font-size: 1.2em;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 50%;
+    padding: 6px 10px;
+}
+
+.logos-media i:hover {
+    box-shadow: 0 0 12px 0 hsla(223, 87%, 63%, 0.3);
+}
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 375px) {
+
+    main {
+        width: 90%;
+        font-size: .6em;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .label button, .label input {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .text-footer {
+        flex-direction: column;
+    }
+
+}
