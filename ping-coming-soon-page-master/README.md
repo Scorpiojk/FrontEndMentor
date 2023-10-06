@@ -4,7 +4,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://github.com/Scorpiojk/FrontEndMentor/tree/main/ping-coming-soon-page-master))
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Author
